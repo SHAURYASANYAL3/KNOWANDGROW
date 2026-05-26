@@ -8,6 +8,9 @@ const patrick = Patrick_Hand({ subsets: ['latin'], weight: '400', variable: '--f
 export const metadata: Metadata = {
   title: 'KNOW & GROW',
   description: 'Rooted in knowledge, committed to society.',
+  verification: {
+    google: 'ssbXNjdvojRNdr60tvqoCJKpFcJYFafwPHL9Zso_Yyw'
+  },
   openGraph: {
     title: 'KNOW & GROW',
     description: 'Engaging young communities with compassionate education, trusted support, and premium social impact.',
@@ -18,6 +21,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="ssbXNjdvojRNdr60tvqoCJKpFcJYFafwPHL9Zso_Yyw" />
+      </head>
       <body className={`${kalam.variable} ${patrick.variable} font-body bg-paper text-foreground`}>{children}</body>
     </html>
   );
