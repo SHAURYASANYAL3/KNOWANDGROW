@@ -6,15 +6,41 @@ const kalam = Kalam({ subsets: ['latin'], weight: ['400', '700'], variable: '--f
 const patrick = Patrick_Hand({ subsets: ['latin'], weight: '400', variable: '--font-heading', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'KNOW & GROW',
-  description: 'Rooted in knowledge, committed to society.',
+  title: {
+    default: 'KNOW & GROW | Youth Mental Health & Digital Safety Awareness',
+    template: '%s | KNOW & GROW'
+  },
+  description: 'A youth-led initiative focused on mental health awareness, digital safety, drug prevention, and community education.',
+  keywords: [
+    'youth mental health',
+    'digital safety',
+    'drug prevention',
+    'community education',
+    'NGO',
+    'youth awareness',
+    'wellbeing',
+    'safe internet'
+  ],
+  metadataBase: new URL('https://knowandgrow.vercel.app'),
+  alternates: {
+    canonical: 'https://knowandgrow.vercel.app'
+  },
   verification: {
     google: 'ssbXNjdvojRNdr60tvqoCJKpFcJYFafwPHL9Zso_Yyw'
   },
   openGraph: {
-    title: 'KNOW & GROW',
-    description: 'Engaging young communities with compassionate education, trusted support, and premium social impact.',
-    type: 'website'
+    title: 'KNOW & GROW | Youth Mental Health & Digital Safety Awareness',
+    description: 'A youth-led initiative focused on mental health awareness, digital safety, drug prevention, and community education.',
+    url: 'https://knowandgrow.vercel.app',
+    siteName: 'KNOW & GROW',
+    type: 'website',
+    locale: 'en_US'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KNOW & GROW | Youth Mental Health & Digital Safety Awareness',
+    description: 'A youth-led initiative focused on mental health awareness, digital safety, drug prevention, and community education.',
+    creator: '@knowandgrow'
   }
 };
 
